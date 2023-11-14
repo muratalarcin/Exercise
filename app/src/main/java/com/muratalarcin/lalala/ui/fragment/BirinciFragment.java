@@ -1,4 +1,4 @@
-package com.muratalarcin.lalala;
+package com.muratalarcin.lalala.ui.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -24,6 +24,7 @@ import com.google.android.material.timepicker.MaterialTimePicker;
 import com.google.android.material.timepicker.TimeFormat;
 
 
+import com.muratalarcin.lalala.R;
 import com.muratalarcin.lalala.databinding.FragmentBirinciBinding;
 
 import java.util.ArrayList;

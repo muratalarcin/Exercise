@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/birinciFragment"
-        android:name="com.muratalarcin.lalala.BirinciFragment"
+        android:name="com.muratalarcin.lalala.ui.fragment.BirinciFragment"
         android:label="fragment_birinci"
         tools:layout="@layout/fragment_birinci" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/ikinciFragment"
-        android:name="com.muratalarcin.lalala.IkinciFragment"
+        android:name="com.muratalarcin.lalala.ui.fragment.IkinciFragment"
         android:label="fragment_ikinci"
         tools:layout="@layout/fragment_ikinci" />
 </navigation>
