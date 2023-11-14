@@ -18,5 +18,26 @@
         android:id="@+id/ikinciFragment"
         android:name="com.muratalarcin.lalala.ui.fragment.IkinciFragment"
         android:label="fragment_ikinci"
-        tools:layout="@layout/fragment_ikinci" />
+        tools:layout="@layout/fragment_ikinci" >
+        <action
+            android:id="@+id/gecis"
+            app:destination="@id/ucuncuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ucuncuFragment"
+        android:name="com.muratalarcin.lalala.ui.fragment.UcuncuFragment"
+        android:label="fragment_ucuncu"
+        tools:layout="@layout/fragment_ucuncu" >
+        <argument
+            android:name="sarki"
+            app:argType="com.muratalarcin.lalala.data.entity.Sarkilar" />
+        <action
+            android:id="@+id/action_ucuncuFragment_to_sheetFragment2"
+            app:destination="@id/sheetFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sheetFragment2"
+        android:name="com.muratalarcin.lalala.SheetFragment"
+        android:label="fragment_sheet"
+        tools:layout="@layout/fragment_sheet" />
 </navigation>

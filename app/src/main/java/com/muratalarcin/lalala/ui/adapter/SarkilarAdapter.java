@@ -5,10 +5,14 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.muratalarcin.lalala.R;
 import com.muratalarcin.lalala.data.entity.Sarkilar;
 import com.muratalarcin.lalala.databinding.SarkilarRowBinding;
+import com.muratalarcin.lalala.ui.fragment.IkinciFragmentDirections;
+
 
 import java.util.List;
 
@@ -50,6 +54,11 @@ public class SarkilarAdapter extends RecyclerView.Adapter<SarkilarAdapter.CardTa
         t.textViewDinlenme.setText(sarki.getDinlenme()+ " ");
 
         t.ratingBarSekli.setRating(sarki.getPuan());
+
+        t.cardViewSarki.setOnClickListener(view -> {
+            IkinciFragmentDirections.Gecis gecis = IkinciFragmentDirections.gecis(sarki);
+            Navigation.findNavController(view).navigate(gecis);
+        });
 
 
     }
