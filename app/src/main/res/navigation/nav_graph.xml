@@ -32,12 +32,12 @@
             android:name="sarki"
             app:argType="com.muratalarcin.lalala.data.entity.Sarkilar" />
         <action
-            android:id="@+id/action_ucuncuFragment_to_sheetFragment2"
-            app:destination="@id/sheetFragment2" />
+            android:id="@+id/sheet_gecis"
+            app:destination="@id/bottomSheetDialogFragment" />
     </fragment>
     <fragment
-        android:id="@+id/sheetFragment2"
-        android:name="com.muratalarcin.lalala.SheetFragment"
-        android:label="fragment_sheet"
-        tools:layout="@layout/fragment_sheet" />
+        android:id="@+id/bottomSheetDialogFragment"
+        android:name="com.muratalarcin.lalala.ui.fragment.BottomSheetDialogFragment"
+        android:label="fragment_bottom_sheet_dialog"
+        tools:layout="@layout/fragment_bottom_sheet_dialog" />
 </navigation>

@@ -1,5 +1,6 @@
 package com.muratalarcin.lalala.ui.fragment;
 
+import android.app.Dialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
 import com.muratalarcin.lalala.R;
 import com.muratalarcin.lalala.data.entity.Sarkilar;
@@ -31,7 +33,7 @@ public class UcuncuFragment extends Fragment {
         ));
 
         binding.floatingActionButton2.setOnClickListener(view -> {
-            Navigation.findNavController(view).navigate(R.id.action_ucuncuFragment_to_sheetFragment2);
+            Navigation.findNavController(view).navigate(R.id.sheet_gecis);
         });
 
         return binding.getRoot();
